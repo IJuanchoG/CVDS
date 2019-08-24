@@ -9,8 +9,9 @@ public class RegistryTest {
 
     @Test
     public void deberiaEdadInvalida() {
-    	Person person = new Person("Pedro",1,-4,Gender.MALE,true);    	
+    	Person person = new Person("Pedro",1,-1,Gender.MALE,false);    	
     	assertEquals(registry.registerVoter(person),RegisterResult.INVALID_AGE);    
-    	System.out.print("HI");
+    	Person person = new Person("Pedro",1,-0,Gender.MALE,false);    	
+    	assertEquals(registry.registerVoter(person),RegisterResult.INVALID_AGE);    
     }
 }
