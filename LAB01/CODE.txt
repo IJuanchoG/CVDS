@@ -1,0 +1,5 @@
+mvn archetype:generate -DgroupId=edu.eci.cvds -DartifactId=Patterns -Dpackage=edu.eci.cvds.patterns -DarchetypeArtifactId=maven-archetype-quickstart
+
+mvn exec:java -Dexec.mainClass="edu.eci.cvds.patterns.App" -Dexec.args="arg0 LOL"
+
+patterns-1.0-SNAPSHOT.jar
