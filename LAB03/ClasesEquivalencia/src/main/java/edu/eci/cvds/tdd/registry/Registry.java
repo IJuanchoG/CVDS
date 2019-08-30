@@ -1,6 +1,5 @@
 package edu.eci.cvds.tdd.registry;
 
-import java.util.Enumeration;
 import java.util.Hashtable;
 
 public class Registry {
