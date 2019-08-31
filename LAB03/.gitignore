@@ -1,19 +1,17 @@
 target/
 
+bin/
+
+.idea/
+
+.settings/
+
 # Ignorar los class
 *.class
 
 # Ignorar los Log
 *.log
 
-*.ctxt
-
 .classpath
 
 .project
-
-bin/
-
-.idea/
-
-.settings/
