@@ -1,5 +1,11 @@
 target/
 
+# Ignorar los class
+*.class
+
+# Ignorar los Log
+*.log
+
 *.ctxt
 
 .classpath
@@ -9,7 +15,3 @@ target/
 bin/
 
 .idea/
-
-*.class
-
-*.log
