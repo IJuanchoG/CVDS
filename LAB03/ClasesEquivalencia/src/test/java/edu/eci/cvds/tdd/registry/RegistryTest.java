@@ -164,6 +164,7 @@ public class RegistryTest {
     	assertEquals(registry.registerVoter(person),RegisterResult.INVALID_AGE); 
     	
     }
+    @Test
     public void quintaCondicion(){ 
         Registry registry = new Registry();        
         

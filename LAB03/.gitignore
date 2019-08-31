@@ -1,0 +1,8 @@
+target/
+*.ctxt
+.classpath
+.project
+bin/
+.idea/
+*.class
+*.log

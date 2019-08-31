@@ -15,38 +15,38 @@ public class RegistryTest {
     	Person person = new Person("Pedro",1,-1,Gender.MALE,true);    	
     	assertEquals(registry.registerVoter(person),RegisterResult.INVALID_AGE);   
         // CASO DE FRONTERA IZQ 0
-                // SI ESTÁ VIVO
+                // SI ESTÃ� VIVO
         person = new Person("Pedro",2,0,Gender.MALE,true);    	
     	assertEquals(registry.registerVoter(person),RegisterResult.UNDERAGE); 
-                // SI ESTÁ MUERTO
+                // SI ESTÃ� MUERTO
         person = new Person("Pedro",3,0,Gender.MALE,false);    	
     	assertEquals(registry.registerVoter(person),RegisterResult.DEAD); 
         // CASO DE FRONTERA IZQ 1
-                // SI ESTÁ VIVO
+                // SI ESTÃ� VIVO
         person = new Person("Pedro",4,1,Gender.MALE,true);    	
     	assertEquals(registry.registerVoter(person),RegisterResult.UNDERAGE);  
-                // SI ESTÁ MUERTO
+                // SI ESTÃ� MUERTO
         person = new Person("Pedro",5,1,Gender.MALE,false);    	
     	assertEquals(registry.registerVoter(person),RegisterResult.DEAD);  
         // VALOR CENTRAL
-                // SI ESTÁ VIVO
+                // SI ESTÃ� VIVO
                         // EDAD MINIMA
         person = new Person("Pedro",6,r.nextInt(Registry.EDADMINIMA),Gender.MALE,true);    	
     	assertEquals(registry.registerVoter(person),RegisterResult.UNDERAGE);
         person = new Person("Pedro",7,r.nextInt(Registry.EDADMINIMA),Gender.MALE,false);    	
     	assertEquals(registry.registerVoter(person),RegisterResult.DEAD); 
         // VALOR DE FRONTERA DER 121        
-                // SI ESTÁ VIVO
+                // SI ESTÃ� VIVO
         person = new Person("Pedro",8,121,Gender.MALE,true);    	
     	assertEquals(registry.registerVoter(person),RegisterResult.VALID); 
-                // SI ESTÁ MUERTO
+                // SI ESTÃ� MUERTO
         person = new Person("Pedro",9,121,Gender.MALE,false);    	
     	assertEquals(registry.registerVoter(person),RegisterResult.DEAD); 
         // VALOR DE FRONTERA DER 122        
-                // SI ESTÁ VIVO
+                // SI ESTÃ� VIVO
         person = new Person("Pedro",10,122,Gender.MALE,true);    	
     	assertEquals(registry.registerVoter(person),RegisterResult.VALID); 
-                // SI ESTÁ MUERTO
+                // SI ESTÃ� MUERTO
         person = new Person("Pedro",11,122,Gender.MALE,false);    	
     	assertEquals(registry.registerVoter(person),RegisterResult.DEAD); 
         // VALOR DE FRONTERA DER 123
@@ -63,21 +63,21 @@ public class RegistryTest {
     	Person person = new Person("Pedro",1,-1,Gender.MALE,true);    	
     	assertEquals(registry.registerVoter(person),RegisterResult.INVALID_AGE);   
         // CASO DE FRONTERA IZQ 0
-                // SI ESTÁ VIVO
+                // SI ESTÃ� VIVO
         person = new Person("Pedro",2,0,Gender.MALE,true);    	
     	assertEquals(registry.registerVoter(person),RegisterResult.UNDERAGE); 
-                // SI ESTÁ MUERTO
+                // SI ESTÃ� MUERTO
         person = new Person("Pedro",3,0,Gender.MALE,false);    	
     	assertEquals(registry.registerVoter(person),RegisterResult.DEAD); 
         // CASO DE FRONTERA IZQ 1
-                // SI ESTÁ VIVO
+                // SI ESTÃ� VIVO
         person = new Person("Pedro",4,1,Gender.MALE,true);    	
     	assertEquals(registry.registerVoter(person),RegisterResult.UNDERAGE);  
-                // SI ESTÁ MUERTO
+                // SI ESTÃ� MUERTO
         person = new Person("Pedro",5,1,Gender.MALE,false);    	
     	assertEquals(registry.registerVoter(person),RegisterResult.DEAD);  
         // VALOR CENTRAL
-                // SI ESTÁ VIVO
+                // SI ESTÃ� VIVO
                         // EDAD MINIMA
         person = new Person("Pedro",6,r.nextInt(Registry.EDADMINIMA),Gender.MALE,true);    	
     	assertEquals(registry.registerVoter(person),RegisterResult.UNDERAGE);
@@ -85,24 +85,24 @@ public class RegistryTest {
         person = new Person("Pedro",7,r.nextInt(Registry.EDADMINIMA),Gender.MALE,false);    	
     	assertEquals(registry.registerVoter(person),RegisterResult.DEAD); 
         // CASO DE FRONTERA DER 17
-                // SI ESTÁ VIVO
+                // SI ESTÃ� VIVO
         person = new Person("Pedro",8,17,Gender.MALE,true);    	
     	assertEquals(registry.registerVoter(person),RegisterResult.UNDERAGE);  
-                // SI ESTÁ MUERTO
+                // SI ESTÃ� MUERTO
         person = new Person("Pedro",9,17,Gender.MALE,false);    	
     	assertEquals(registry.registerVoter(person),RegisterResult.DEAD); 
         // CASO DE FRONTERA DER 18
-                // SI ESTÁ VIVO
+                // SI ESTÃ� VIVO
         person = new Person("Pedro",10,18,Gender.MALE,true);    	
     	assertEquals(registry.registerVoter(person),RegisterResult.VALID);  
-                // SI ESTÁ MUERTO
+                // SI ESTÃ� MUERTO
         person = new Person("Pedro",11,18,Gender.MALE,false);    	
     	assertEquals(registry.registerVoter(person),RegisterResult.DEAD); 
         // CASO DE FRONTERA DER 19
-                // SI ESTÁ VIVO
+                // SI ESTÃ� VIVO
         person = new Person("Pedro",12,19,Gender.MALE,true);    	
     	assertEquals(registry.registerVoter(person),RegisterResult.VALID);  
-                // SI ESTÁ MUERTO
+                // SI ESTÃ� MUERTO
         person = new Person("Pedro",13,19,Gender.MALE,false);    	
     	assertEquals(registry.registerVoter(person),RegisterResult.DEAD);
         
@@ -164,6 +164,7 @@ public class RegistryTest {
     	assertEquals(registry.registerVoter(person),RegisterResult.INVALID_AGE); 
     	
     }
+    @Test
     public void quintaCondicion(){ 
         Registry registry = new Registry();        
         
